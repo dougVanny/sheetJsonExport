@@ -6,20 +6,21 @@ This document is a massive WIP and has nothing but the bare minimum to let someo
 
 Add the attached script to your spreadsheet's Apps Script and, in another file, add the following code
 
-    var ui = SpreadsheetApp.getUi();
-    
-    function onOpen()
-    {
-      var menu = ui.createMenu("Tools");
-      menu = JSONExport.addToMenu(menu,"JSONExport");
-      menu.addToUi();
-    }
-    
-    function exportJson()
-    {
-      JSONExport.exportJson();
-    }
+```javascript
+var ui = SpreadsheetApp.getUi();
 
+function onOpen()
+{
+  var menu = ui.createMenu("Tools");
+  menu = JSONExport.addToMenu(menu,"JSONExport");
+  menu.addToUi();
+}
+
+function exportJson()
+{
+  JSONExport.exportJson();
+}
+```
 
 ## Spreadsheet Format
 
